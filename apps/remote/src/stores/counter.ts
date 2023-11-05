@@ -1,11 +1,24 @@
 
-// import type { useCounterStore as _useCounterStore } from '../../../host/stores/counter'
+import { defineStore } from "pinia";
+import { ref } from 'vue'
+
+const _useCounterStore = defineStore('counter', () => {
+  const count = ref(0)
+  const increment = () => count.value++
+  const decrement = () => count.value--
+  return {
+    count,
+    increment,
+    decrement,
+  }
+})
+
+type useCounterStoreType = typeof _useCounterStore
 
 declare global {
   interface Window {
-    useCounterStore: any;
+    useCounterStore: useCounterStoreType
   }
 }
 
-
-export const useCounterStore = window.useCounterStore;
+export const useCounterStore = window.useCounterStore || _useCounterStore;
