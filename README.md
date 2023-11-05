@@ -39,3 +39,8 @@ Vue remote is exposed at http://localhost:5001.
 ## Troubleshooting
 
 If you still cannot get the project running, [file an issue](https://github.com/jeffpdotone/nuxt-vite-module-federation/issues/new) in case you encounter.
+
+## References
+
+- https://github.com/module-federation/module-federation-examples/tree/master/vite-vue-microfrontends
+- https://github.com/phoenix-ru/nuxt3-module-federation-example
