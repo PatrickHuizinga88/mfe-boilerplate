@@ -1,4 +1,5 @@
 {
+  "name": "nuxt-vite-module-federation",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -11,6 +12,5 @@
     "prettier": "^3.0.3",
     "turbo": "latest"
   },
-  "packageManager": "pnpm@8.6.10",
-  "name": "nuxt-vite-module-federation"
+  "packageManager": "pnpm@8.6.10"
 }
