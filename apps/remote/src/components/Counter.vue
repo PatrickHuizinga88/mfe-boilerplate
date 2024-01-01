@@ -6,9 +6,8 @@ const { count } = storeToRefs(counterStore);
 </script>
 
 <template>
-  <button
-    @click="counterStore.increment"
-  >
-    Remote counter: {{ count }}
+  <button class="border-2 border-white rounded-md font-medium py-2 px-3 hover:border-primary-300 duration-200" @click="counterStore.increment">
+    Remote counter: 
+    <span class="inline-block w-6">{{ count }}</span>
   </button>
 </template>

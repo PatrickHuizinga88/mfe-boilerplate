@@ -1,14 +1,19 @@
 <template>
-    <h1>Dashboard</h1>
-    <div>
-        Host
+    <LayoutPage title="Welcome, Patrick! 👋">
+        <div class="grid grid-cols-1 md:grid-cols-3 overflow-hidden rounded-xl border border-gray-300 dark:border-zinc-700 divide-y md:divide-y-0 md:divide-x divide-gray-300 dark:divide-zinc-700">
+            <UiStatCard title="Customers" :stat="123" :difference="12.5" subtitle="compared to last week"/>
+            <UiStatCard title="Users" :stat="10"/>
+            <UiStatCard title="Last sign in" :stat="'Yesterday'"/>
+        </div>
+    </LayoutPage>
+
+    <div class="flex gap-x-4 mt-8">
         <Counter></Counter>
-        <Remote></Remote> 
+        <Remote></Remote>
     </div>
-
-    <Card title="test"/>
+    
 </template>
-
+  
 <script setup lang="ts">
-import { Card } from 'ui'
+import { StatCard as UiStatCard } from 'ui'
 </script>

@@ -16,6 +16,7 @@
     "@softarc/native-federation": "^2.0.4",
     "@softarc/native-federation-esbuild": "^2.0.4",
     "nuxt": "^3.8.0",
+    "nuxt-headlessui": "^1.1.4",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5",
     "autoprefixer": "^10.4.16",
